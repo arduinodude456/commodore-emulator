@@ -10,15 +10,15 @@ Actual in version 0.1 supported devices are
 **AD-5364** (F.O. IBM PC)
 ## How to select a device
 To select a device, you have to define / undef the ones you want.
-'''
+```
 #undef MULTIPLATFORM
 
 #define EM_C64
 #undef EM_A1000
 #undef ADOS
-'''
+```
 You also have to set up the free memory and stuff l. this:
-'''
+```
 #define RAM_SIZE 64 //maximal 64K, minimal 16K is needed by OS.
 #define COLOR_DEPHT 32 //32 colours by default
 /\* Software Interlace couldt save 30% of the RAM. \*/
@@ -27,4 +27,4 @@ You also have to set up the free memory and stuff l. this:
 #undef HOLD_AND MODIFY
 /\*This feature is only needed for ADOS Device, it makes possible a multidimensional file storage (folders etc.)\*/
 #define USE_MULTIDIM_FOLDERS
-'''
+```
